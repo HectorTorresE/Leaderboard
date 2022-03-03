@@ -73,7 +73,6 @@ class leaderboard {
           </div>
         </div>
         `;
-        return;
       }
     });
     list.innerHTML = listHtml;
