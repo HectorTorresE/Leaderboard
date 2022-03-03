@@ -16,7 +16,7 @@ class leaderboard {
         return 0;
       });
     }
-    this.scoreList.forEach((e , i) => {
+    this.scoreList.forEach((e, i) => {
       if (i === 0) {
         listHtml += `
         <div class="row borderT">
@@ -41,7 +41,7 @@ class leaderboard {
         `;
         return;
       }
-      if (i === this.scoreList.length - 1 && i % 2 === 0) { 
+      if (i === this.scoreList.length - 1 && i % 2 === 0) {
         listHtml += `
         <div class="row borderB">
           <div class="col-6 text-start">
@@ -53,7 +53,7 @@ class leaderboard {
         `;
         return;
       }
-      if (i % 2 !== 0) { 
+      if (i % 2 !== 0) {
         listHtml += `
         <div class="row borderMW">
           <div class="col-6 text-start">
@@ -63,8 +63,7 @@ class leaderboard {
           </div>
         </div>
         `;
-        return;
-      } else { 
+      } else {
         listHtml += `
         <div class="row borderM">
           <div class="col-6 text-start">
@@ -75,13 +74,10 @@ class leaderboard {
         </div>
         `;
         return;
-
       }
-      
     });
     list.innerHTML = listHtml;
   }
-
 
   submitEvent() {
     const user = document.getElementById('user');
@@ -111,7 +107,6 @@ class leaderboard {
       if (e.key === 'Enter') this.submitEvent();
     });
   }
-
 }
 
-export default leaderboard; 
+export default leaderboard;

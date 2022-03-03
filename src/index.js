@@ -4,4 +4,4 @@ import Leaderboard from './leaderboard.js';
 
 const board = new Leaderboard();
 board.RefreshList();
-board.EventList(); 
+board.EventList();

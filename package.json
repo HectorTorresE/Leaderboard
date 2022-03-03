@@ -1,5 +1,5 @@
 {
-  "name": "webpack-setup",
+  "name": "Leaderboard",
   "version": "1.0.0",
   "description": "",
   "private": "true",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HectorTorresE/WebPack-SetUp.git"
+    "url": "git+https://github.com/HectorTorresE/Leaderboard.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HectorTorresE/WebPack-SetUp/issues"
+    "url": "https://github.com/HectorTorresE/Leaderboard/issues"
   },
-  "homepage": "https://github.com/HectorTorresE/WebPack-SetUp#readme",
+  "homepage": "https://github.com/HectorTorresE/Leaderboard#readme",
   "devDependencies": {
     "css-loader": "^6.6.0",
     "html-webpack-plugin": "^5.5.0",
