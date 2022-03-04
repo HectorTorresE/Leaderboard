@@ -1,3 +1,36 @@
-body {
-  background-color: bisque;
+.borderT {
+  background-color: grey;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.borderTW {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.borderM {
+  background-color: grey;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.borderMW {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.borderB {
+  background-color: grey;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.borderBW {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }

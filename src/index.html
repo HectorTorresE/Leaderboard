@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
-</head>
-<body>
-    <h1>Hello H!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LeaderBoard</title>
+  </head>
+  <body class="bg-white color-dark">
+    <h1 class="text-center">Leaderboard</h1>
+    <div class="row gx-5">
+      <div class="col-lg-6 col-sm-12 text-center">
+        <h2>
+          Recent Scores
+          <button class="btn btn-primary" type="button">Refresh</button>
+        </h2>
+        <div id="leaderboard" class="m-4"></div>
+      </div>
+      <div class="col-lg-6 col-sm-12 text-center">
+        <h2>Add your score</h2>
+        <input
+          class="mb-3 mt-3"
+          type="text"
+          name="user"
+          id="user"
+          placeholder="Your name"
+          required
+        />
+        <br />
+        <input
+          class="mb-3 mt-3"
+          type="number"
+          name="score"
+          id="score"
+          placeholder="Your score"
+          required
+        />
+        <div class="row">
+          <div class="col-12">
+            <button
+              class="btn btn-primary ml-4"
+              type="button"
+              id="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
