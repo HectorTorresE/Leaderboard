@@ -1,8 +1,18 @@
+import apiData from './apiData.js';
+
 class leaderboard {
   scoreList = [];
 
-  add(user, score) {
-    this.scoreList.push({ user, score: Number(score) });
+  constructor() {
+    this.data = new apiData();
+  }
+
+  async add(user, score) {
+    const result = await this.data.addData(user, score);
+    if (result) {
+      this.scoreList.push({ user, score: Number(score) });
+      this.RefreshList();
+    } 
   }
 
   RefreshList() {
@@ -98,12 +108,26 @@ class leaderboard {
     user.focus();
   }
 
+  async getData() {
+    this.scoreList = await this.data.getData();
+  }
+
+  async update() {
+    this.getData().then(() => {
+      this.RefreshList();
+    });
+  }
+
   EventList() {
     document.getElementById('submit').addEventListener('click', () => {
       this.submitEvent();
     });
     document.getElementById('score').addEventListener('keypress', (e) => {
       if (e.key === 'Enter') this.submitEvent();
+    });
+
+    document.getElementById('refresh').addEventListener('click', () => {
+      this.update();
     });
   }
 }
