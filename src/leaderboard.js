@@ -1,10 +1,10 @@
-import apiData from './apiData.js';
+import ApiData from './apiData.js';
 
 class leaderboard {
   scoreList = [];
 
   constructor() {
-    this.data = new apiData();
+    this.data = new ApiData();
   }
 
   async add(user, score) {
@@ -12,7 +12,7 @@ class leaderboard {
     if (result) {
       this.scoreList.push({ user, score: Number(score) });
       this.RefreshList();
-    } 
+    }
   }
 
   RefreshList() {

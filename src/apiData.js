@@ -1,5 +1,6 @@
-class apiData {
+class ApiData {
   baseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+
   Key = 'XYGdTBhAmzYfPxJDflJw';
 
   async getData() {
@@ -29,4 +30,4 @@ class apiData {
     return false;
   }
 }
-export default apiData; 
+export default ApiData;
